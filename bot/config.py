@@ -3,17 +3,17 @@ from bot.get_cfg import get_config
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "")
+    TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", "7397532645:AAH7R46hDIQ95j9-5kyVgySCa-A6cHQy6vE")
     # The Telegram API things
-    APP_ID = int(get_config("APP_ID", 12345))
-    API_HASH = get_config("API_HASH")
+    APP_ID = int(get_config("APP_ID", 13384432))
+    API_HASH = get_config("API_HASH","ea9db4503ed7088b788e06dfd818e00e")
      # Get these values from my.telegram.org
     # array to store the channel ID who are authorized to use the bot
     AUTH_USERS = set(
         int(x) for x in get_config(
             "AUTH_USERS",
             should_prompt=True
-        ).split()
+        ).split(6169288210)
     )
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = get_config("DOWNLOAD_LOCATION", "/app/DOWNLOADS")
@@ -22,7 +22,7 @@ class Config(object):
     TG_MAX_FILE_SIZE = 1572864000
     FREE_USER_MAX_FILE_SIZE = 1572864000
     # default thumbnail to be used in the videos
-    DEF_THUMB_NAIL_VID_S = get_config("DEF_THUMB_NAIL_VID_S", "https://placehold.it/90x90")
+    DEF_THUMB_NAIL_VID_S = get_config("DEF_THUMB_NAIL_VID_S", "https://c.top4top.io/p_3125nmskm0.png")
     # proxy for accessing youtube-dl in GeoRestricted Areas
     # Get your own proxy from https://github.com/rg3/youtube-dl/issues/1091#issuecomment-230163061
     HTTP_PROXY = get_config("HTTP_PROXY", None)
